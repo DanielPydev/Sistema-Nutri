@@ -205,12 +205,6 @@ class TelaFinanceiro(QMainWindow):
         self.ui.setupUi(self)
 
 
-
-
-
-        
-
-
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = Main()
