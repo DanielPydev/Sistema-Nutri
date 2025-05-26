@@ -38,7 +38,7 @@ class Main(QMainWindow):
         self.tela_consultas = TelaContrDietas()
         self.tela_consultas.show()
         self.close()
-
+        
     def cadPaciente(self):
         nome = self.ui.lineEdit.text()
         idade = self.ui.lineEdit_2.text()
