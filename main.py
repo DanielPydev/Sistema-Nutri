@@ -2,7 +2,6 @@ import sys
 import mysql.connector
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox  
-import pyqtgraph as pg
 from PyQt5.QtWidgets import QWidget, QVBoxLayout
 from cad_paciente import Ui_MainWindow
 from cad_consultas import Ui_MainWindow as Ui_Consultas
@@ -10,7 +9,7 @@ from contr_dietas import Ui_MainWindow as Ui_ContrDietas
 from rela_graf import Ui_MainWindow as Ui_Graficos
 from contr_finan import Ui_MainWindow as Ui_Financeiro
 
-
+#Tela Inicial
 class Main(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -89,6 +88,7 @@ class Main(QMainWindow):
         else:
             QMessageBox.warning(self, "Aviso", "Preencha todos os campos!")
 
+#Tela de Cadastro de Consultas
 class TelaConsultas(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -132,6 +132,7 @@ class TelaConsultas(QMainWindow):
         else:
             QMessageBox.warning(self, "Aviso", "Preencha todos os campos!")
 
+#Tela de Controle de Dietas
 class TelaContrDietas(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -198,6 +199,7 @@ class TelaContrDietas(QMainWindow):
     #def gerar1(self):
         #paciente = self.ui.lineEdit.text()
 
+#Tela Financeiro
 class TelaFinanceiro(QMainWindow):
     def __init__(self):
         super().__init__()
